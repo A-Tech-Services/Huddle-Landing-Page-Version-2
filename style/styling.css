@@ -8,8 +8,89 @@
 }
 
 .headerbackground{
-    height: 50em;
+    height: 60em;
     max-width: 100%;
+    padding-top: 4em;
+    padding-left: 5em;
+    padding-right: 5em;
     background-color: hsl(193, 100%, 96%);
     background-image: url(/img/bg-hero-desktop.svg);
+}
+
+.navbar{
+    margin: auto;
+    width: 100%;
+}
+
+.navbar img{
+    width: 15em;
+}
+
+.navbar button{
+    float: right;
+    padding: 2em;
+    width: 20em;
+    border-radius: 5em;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    background-color: white;
+    color: hsl(192, 100%, 9%);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.247);
+    cursor: pointer;
+}
+
+.headercontent{
+    clear: both;
+    margin: auto;
+    margin-top: 7em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text{
+    margin-top: 8em;
+}
+
+.text h1{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: hsl(192, 100%, 9%);
+}
+
+.text p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    color: hsl(192, 100%, 9%);
+    margin-bottom: 2em;
+}
+
+.text button{
+    width: 25em;
+    padding: 2em;
+    border-radius: 10em;
+    border: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    background-color: hsl(322, 100%, 66%);
+    box-shadow: 1px 1px 20px hsla(322, 100%, 66%, 0.466);
+    cursor: pointer;
+}
+
+.text button:hover{
+    background-color: hsla(322, 100%, 66%, 0.637);
+}
+
+.mockup img{
+    max-width: 60em;
+}
+
+.container{
+    padding-left: 5em;
+    padding-right: 5em;
 }
