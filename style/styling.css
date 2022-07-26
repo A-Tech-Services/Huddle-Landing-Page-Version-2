@@ -21,16 +21,28 @@
 .navbar{
     margin: auto;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    width: 15em;
+    
 }
 
 .navbar img{
+    width: 100%;
+    margin-top: 1em;
+}
+
+.navbutton{
     width: 15em;
 }
 
+
 .navbar button{
-    float: right;
     padding: 2em;
-    width: 20em;
+    width: 100%;
     border-radius: 5em;
     border: none;
     font-family: 'Open Sans', sans-serif;
@@ -42,7 +54,6 @@
 }
 
 .headercontent{
-    clear: both;
     margin: auto;
     margin-top: 7em;
     width: 100%;
@@ -51,7 +62,7 @@
 }
 
 .text{
-    margin-top: 8em;
+    margin-top: 7em;
 }
 
 .text h1{
@@ -65,14 +76,21 @@
 .text p{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    width: 31em;
     font-size: 1.3em;
     color: hsl(192, 100%, 9%);
     margin-bottom: 2em;
 }
 
-.text button{
+.textbutton{
     width: 25em;
+
+}
+
+.text button{
+    width: 100%;
     padding: 2em;
+    font-size: 1em;
     border-radius: 10em;
     border: none;
     color: white;
@@ -87,8 +105,12 @@
     background-color: hsla(322, 100%, 66%, 0.637);
 }
 
+.mockup{
+    width: 55em;
+}
+
 .mockup img{
-    max-width: 60em;
+    width: 100%;
 }
 
 .container{
@@ -124,9 +146,26 @@
     font-weight: 400;
 }
 
-.img img{
+.container .img{
     width: 35em;
     margin-top: 3em;
+    margin-bottom: 3em;
+    border: 1px solid black;
+}
+
+.container .one{
+    background-image: url(/img/illustration-grow-together.svg);
+    background-size: cover;
+}
+
+.container .two{
+    background-image: url(/img/illustration-flowing-conversation.svg);
+    background-size: cover;
+}
+
+.container .three{
+    background-image: url(/img/illustration-your-users.svg);
+    background-size: cover;
 }
 
 
@@ -135,13 +174,46 @@
     position: relative;
     margin: auto;
     margin-top: 10em;
-    width: 60%;
+    max-width: 60%;
     height: 25em;
+    padding: 5em;
     border: none;
-    border-radius: 1em;
+    border-radius: 1.5em;
     background-color: white;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.158);
     z-index: 3;  
+}
+
+.ctacontent{
+    margin: auto;
+    max-width: 55%;
+    margin-top: 2.5em;
+}
+
+.cta h1{
+    text-align: center;
+    color: hsl(192, 100%, 9%);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.cta button{
+    padding: 1.5em;
+    border-radius: 5em;
+    width: 100%;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 20px hsla(322, 100%, 66%, 0.589);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.cta button:hover{
+    background-color: hsla(322, 100%, 66%, 0.637);
 }
 
 
@@ -155,4 +227,71 @@
     height: 40em;
     margin-top: -10em;
     z-index: -3;
+}
+
+@media (max-width: 600px){
+
+    .headerbackground{
+        min-height: 70em;
+        max-width: 100%;
+    }
+
+
+    .navbar img{
+        width: 7em;
+    }
+
+
+    .navbar button{
+        float: right;
+        padding: 1em;
+        width: 10em;
+    }
+
+    .headercontent{
+        margin: auto;
+        margin-top: 1em;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
+    .text h1{
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 1em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        color: hsl(192, 100%, 9%);
+    }
+    
+    .text p{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        width: 20.5em;
+        color: hsl(192, 100%, 9%);
+        margin-bottom: 1em;
+    }
+    
+    .textbutton{
+        margin: auto;
+        width: 25em;
+        padding: 2em;
+        margin-bottom: 1em;
+
+    }
+
+    .text button{
+        width: 100%;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        height: 35em;
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.158);
+    }
+
 }
