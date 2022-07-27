@@ -142,6 +142,7 @@
 .ltext p{
     color: hsl(208, 11%, 55%);
     font-size: 1.5em;
+    width: 28em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
@@ -150,7 +151,6 @@
     width: 35em;
     margin-top: 3em;
     margin-bottom: 3em;
-    border: 1px solid black;
 }
 
 .container .one{
@@ -287,11 +287,40 @@
         width: 100%;
     }
 
+
     .container{
+        height:50em;
+        margin: auto;
+        margin-bottom: 3em;
+        padding-left: 3em;
+        padding-right: 3em;
+        max-width: 85%;
         display: flex;
         flex-wrap: wrap-reverse;
-        height: 35em;
-        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.158);
+    }
+    
+    .ltext{
+        margin-top: 2em;
+        margin: auto;
+    }
+    
+    .ltext h1{
+        margin-bottom: 0.5em;
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .ltext p{
+        color: hsl(208, 11%, 55%);
+        font-size: 1.5em;
+        width: 18em;
+        text-align: center;
+    }
+    
+    .container .img{
+        width: 35em;
+        height: 20em;
+        margin-top: 1em;
     }
 
 }
