@@ -229,7 +229,7 @@
     z-index: -3;
 }
 
-@media (max-width: 600px){
+@media (min-width:320px) and (max-width: 600px){
 
     .headerbackground{
         min-height: 70em;
